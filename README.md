@@ -25,7 +25,6 @@ _📌Vite5最新的前端构建，需要配合 <a href="https://github.com/yovvi
 
 </div>
 
-
 ## 技术栈
 
 - 💚 Vue 3.0：使用最新版本的Vue进行开发。
@@ -103,6 +102,7 @@ pnpm run build
 ├── package.json                   # 项目配置
 └── vite.config.ts                 # Vite配置
 ```
+
 ## 使用流程
 
 1. 初始化项目（参考上述步骤）。
@@ -142,6 +142,7 @@ pnpm run build
 </a>
 
 ## 状态
+
 ![State](https://repobeats.axiom.co/api/embed/1afb632b433fc29c854cbf462237c1071143b8a5.svg "Repobeats analytics image")
 
 ## 鸣谢
