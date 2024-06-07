@@ -1,6 +1,30 @@
-# Vue Template 🚀
+<div align="center">
 
-该项目是一个基于Vue 3.0的前端模板，使用了以下技术和工具进行开发和构建。
+<a href="https://github.com/yovvis/easy-open-ui">
+  <img width="180" src="./docs/logo.png" alt="Easy Open logo">
+</a>
+<h1 align="center">EASY-OPEN-UI</h1>
+<p align="center">根据Element Plus进行开发，使用Vite5+Vue3+Element+TS+OpenApi, 一款开箱即用的中后台管理项目。</p>
+
+<a href="https://open.cuuxx.com" target="_blank"><img alt="Preview url" src="https://img.shields.io/badge/%E9%A2%84%E8%A7%88%E5%9C%B0%E5%9D%80-8A2BE2?color=%2314C9C9"/></a>
+![vue](https://img.shields.io/badge/vue-3.0-brightgreen)
+![typescript](https://img.shields.io/badge/typescript-5.1.6-blue)
+![vite](https://img.shields.io/badge/vite-4.4.6-orange)
+![vue-router](https://img.shields.io/badge/vue--router-4.2.4-lightblue)
+![pinia](https://img.shields.io/badge/pinia-2.1.4-green)
+![scss](https://img.shields.io/badge/scss-1.37.5-pink)
+![git](https://img.shields.io/badge/git-2.33.0-red)
+![husky](https://img.shields.io/badge/husky-7.0.4-yellow)
+![axios](https://img.shields.io/badge/axios-1.4.0-purple)
+![lodash](https://img.shields.io/badge/lodash-4.17.21-lightgrey)
+![tailwindcss](https://img.shields.io/badge/tailwindcss-3.0-blueviolet)
+![eslint](https://img.shields.io/badge/eslint-8.45.0-brightgreen)
+![prettier](https://img.shields.io/badge/prettier-3.0.0-orange)
+
+_📌Vite5最新的前端构建，需要配合 <a href="https://github.com/yovvis/easy-open" target="_blank">easy-open</a> 一起使用👈🏻_
+
+</div>
+
 
 ## 技术栈
 
@@ -18,32 +42,42 @@
 - 🚦 Eslint：使用Eslint进行代码检查。
 - ✨ Prettier：使用Prettier进行代码美化。
 
-![vue](https://img.shields.io/badge/vue-3.0-brightgreen)
-![typescript](https://img.shields.io/badge/typescript-5.1.6-blue)
-![vite](https://img.shields.io/badge/vite-4.4.6-orange)
-![vue-router](https://img.shields.io/badge/vue--router-4.2.4-lightblue)
-![pinia](https://img.shields.io/badge/pinia-2.1.4-green)
-![scss](https://img.shields.io/badge/scss-1.37.5-pink)
-![git](https://img.shields.io/badge/git-2.33.0-red)
-![husky](https://img.shields.io/badge/husky-7.0.4-yellow)
-![axios](https://img.shields.io/badge/axios-1.4.0-purple)
-![lodash](https://img.shields.io/badge/lodash-4.17.21-lightgrey)
-![tailwindcss](https://img.shields.io/badge/tailwindcss-3.0-blueviolet)
-![eslint](https://img.shields.io/badge/eslint-8.45.0-brightgreen)
-![prettier](https://img.shields.io/badge/prettier-3.0.0-orange)
+## 使用方法
+
+1. 安装依赖：
+
+```shell
+pnpm install
+```
+
+2. 启动开发服务器：
+
+```shell
+pnpm run dev
+```
+
+3. 在浏览器中打开 [http://localhost:3000](http://localhost:3000) 进行开发。
+
+
+4. 构建项目：
+
+```shell
+pnpm run build
+```
+
+5. 构建完成后，可以在`dist`目录中找到构建后的文件。
 
 ## 开发环境要求
 
 - 📌 Node.js：请确保你的Node.js版本在16.x以上。
 - 📌 NPM：请确保你的NPM版本在9.x以上。
 
-## 初始化项目
+## 开发注意事项
 
-克隆或下载该项目后，进入项目根目录，执行以下命令来安装依赖：
-
-```shell
-npm install
-```
+- 确保你的项目使用了 Vue 3.0 版本。
+- 使用 Typescript 进行开发，提高代码的可读性和维护性。
+- 在开发过程中，推荐使用 VS Code 编辑器，并安装相关插件，例如 Vetur、ESLint、Prettier，以提升开发效率。
+- 遵循 Git 的代码提交规范，使用语义化的提交信息，方便版本管理和发布。
 
 ## 目录树形结构
 
@@ -90,44 +124,25 @@ npm install
 
 13. 在完成开发后，可以使用 Vite 打包构建工具进行项目的构建。具体使用方式请参考 Vite 的官方文档。
 
-## 开发注意事项
-
-- 确保你的项目使用了 Vue 3.0 版本。
-- 使用 Typescript 进行开发，提高代码的可读性和维护性。
-- 在开发过程中，推荐使用 VS Code 编辑器，并安装相关插件，例如 Vetur、ESLint、Prettier，以提升开发效率。
-- 遵循 Git 的代码提交规范，使用语义化的提交信息，方便版本管理和发布。
-
-## 使用方法
-
-1. 安装依赖：
-
-```shell
-npm install
-```
-
-2. 启动开发服务器：
-
-```shell
-npm run dev
-```
-
-3. 在浏览器中打开 [http://localhost:3000](http://localhost:3000) 进行开发。
-
-4. 构建项目：
-
-```shell
-npm run build
-```
-
-5. 构建完成后，可以在`dist`目录中找到构建后的文件。
-
 ## 贡献
 
 欢迎贡献代码，提出问题和建议。请在提交代码前确保通过了 ESLint 的代码检查。
 
-## 许可证
+# License
 
-本项目基于 MIT 许可证开源。
+本项目遵循 [GPL_3.0 协议](./LICENSE)许可证。
+
+## 贡献
+
+<a href="https://github.com/yovvis/easy-open-ui/graphs/contributors" target="_blank" style="display: block" align="left">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://next.ossinsight.io/widgets/official/compose-recent-active-contributors/thumbnail.png?repo_id=809881275&limit=30&image_size=auto&color_scheme=dark" width="100%" height="auto">
+    <img alt="Active Contributors of yovvis/easy-open-ui - Last 28 days" src="https://next.ossinsight.io/widgets/official/compose-recent-active-contributors/thumbnail.png?repo_id=809881275&limit=30&image_size=auto&color_scheme=light" width="815px" height="auto">
+  </picture>
+</a>
+
+## 状态
+![State](https://repobeats.axiom.co/api/embed/1afb632b433fc29c854cbf462237c1071143b8a5.svg "Repobeats analytics image")
 
 ## 鸣谢
 
@@ -145,5 +160,3 @@ npm run build
 - [Prettier](https://prettier.io/)
 
 ---
-
-🚀 现在你可以开始使用 Vue-Template 进行前端项目的开发啦！如果有任何问题或建议，请随时提出。祝你编码愉快！
