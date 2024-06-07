@@ -4,7 +4,7 @@ import request from "@/utils/request"
 /** addApp POST /api/app/app/add */
 export async function addAppUsingPost(
     body: API.AppAddRequest,
-    options?: { [key: string]: any }
+    options?: { [key: string]: never }
 ) {
     return request<API.BaseResponseLong_>("/api/app/app/add", {
         method: "POST",
@@ -19,7 +19,7 @@ export async function addAppUsingPost(
 /** deleteApp POST /api/app/app/delete */
 export async function deleteAppUsingPost(
     body: API.DeleteRequest,
-    options?: { [key: string]: any }
+    options?: { [key: string]: never }
 ) {
     return request<API.BaseResponseBoolean_>("/api/app/app/delete", {
         method: "POST",
@@ -34,7 +34,7 @@ export async function deleteAppUsingPost(
 /** editApp POST /api/app/app/edit */
 export async function editAppUsingPost(
     body: API.AppEditRequest,
-    options?: { [key: string]: any }
+    options?: { [key: string]: never }
 ) {
     return request<API.BaseResponseBoolean_>("/api/app/app/edit", {
         method: "POST",
@@ -50,7 +50,7 @@ export async function editAppUsingPost(
 export async function getAppVoByIdUsingGet(
     // 叠加生成的Param类型 (非body参数swagger默认没有生成对象)
     params: API.getAppVOByIdUsingGETParams,
-    options?: { [key: string]: any }
+    options?: { [key: string]: never }
 ) {
     return request<API.BaseResponseAppVO_>("/api/app/app/get/vo", {
         method: "GET",
@@ -64,7 +64,7 @@ export async function getAppVoByIdUsingGet(
 /** listAppByPage POST /api/app/app/list/page */
 export async function listAppByPageUsingPost(
     body: API.AppQueryRequest,
-    options?: { [key: string]: any }
+    options?: { [key: string]: never }
 ) {
     return request<API.BaseResponsePageApp_>("/api/app/app/list/page", {
         method: "POST",
@@ -79,7 +79,7 @@ export async function listAppByPageUsingPost(
 /** listAppVOByPage POST /api/app/app/list/page/vo */
 export async function listAppVoByPageUsingPost(
     body: API.AppQueryRequest,
-    options?: { [key: string]: any }
+    options?: { [key: string]: never }
 ) {
     return request<API.BaseResponsePageAppVO_>("/api/app/app/list/page/vo", {
         method: "POST",
@@ -94,7 +94,7 @@ export async function listAppVoByPageUsingPost(
 /** listMyAppVOByPage POST /api/app/app/my/list/page/vo */
 export async function listMyAppVoByPageUsingPost(
     body: API.AppQueryRequest,
-    options?: { [key: string]: any }
+    options?: { [key: string]: never }
 ) {
     return request<API.BaseResponsePageAppVO_>("/api/app/app/my/list/page/vo", {
         method: "POST",
@@ -109,7 +109,7 @@ export async function listMyAppVoByPageUsingPost(
 /** doAppReview POST /api/app/app/review */
 export async function doAppReviewUsingPost(
     body: API.ReviewRequest,
-    options?: { [key: string]: any }
+    options?: { [key: string]: never }
 ) {
     return request<API.BaseResponseBoolean_>("/api/app/app/review", {
         method: "POST",
@@ -124,7 +124,7 @@ export async function doAppReviewUsingPost(
 /** updateApp POST /api/app/app/update */
 export async function updateAppUsingPost(
     body: API.AppUpdateRequest,
-    options?: { [key: string]: any }
+    options?: { [key: string]: never }
 ) {
     return request<API.BaseResponseBoolean_>("/api/app/app/update", {
         method: "POST",

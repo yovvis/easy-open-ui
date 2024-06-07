@@ -4,7 +4,7 @@ import request from "@/utils/request"
 /** addScoringResult POST /api/app/scoringResult/add */
 export async function addScoringResultUsingPost(
     body: API.ScoringResultAddRequest,
-    options?: { [key: string]: any }
+    options?: { [key: string]: never }
 ) {
     return request<API.BaseResponseLong_>("/api/app/scoringResult/add", {
         method: "POST",
@@ -19,7 +19,7 @@ export async function addScoringResultUsingPost(
 /** deleteScoringResult POST /api/app/scoringResult/delete */
 export async function deleteScoringResultUsingPost(
     body: API.DeleteRequest,
-    options?: { [key: string]: any }
+    options?: { [key: string]: never }
 ) {
     return request<API.BaseResponseBoolean_>("/api/app/scoringResult/delete", {
         method: "POST",
@@ -34,7 +34,7 @@ export async function deleteScoringResultUsingPost(
 /** editScoringResult POST /api/app/scoringResult/edit */
 export async function editScoringResultUsingPost(
     body: API.ScoringResultEditRequest,
-    options?: { [key: string]: any }
+    options?: { [key: string]: never }
 ) {
     return request<API.BaseResponseBoolean_>("/api/app/scoringResult/edit", {
         method: "POST",
@@ -50,7 +50,7 @@ export async function editScoringResultUsingPost(
 export async function getScoringResultVoByIdUsingGet(
     // 叠加生成的Param类型 (非body参数swagger默认没有生成对象)
     params: API.getScoringResultVOByIdUsingGETParams,
-    options?: { [key: string]: any }
+    options?: { [key: string]: never }
 ) {
     return request<API.BaseResponseScoringResultVO_>(
         "/api/app/scoringResult/get/vo",
@@ -67,7 +67,7 @@ export async function getScoringResultVoByIdUsingGet(
 /** listScoringResultByPage POST /api/app/scoringResult/list/page */
 export async function listScoringResultByPageUsingPost(
     body: API.ScoringResultQueryRequest,
-    options?: { [key: string]: any }
+    options?: { [key: string]: never }
 ) {
     return request<API.BaseResponsePageScoringResult_>(
         "/api/app/scoringResult/list/page",
@@ -85,7 +85,7 @@ export async function listScoringResultByPageUsingPost(
 /** listScoringResultVOByPage POST /api/app/scoringResult/list/page/vo */
 export async function listScoringResultVoByPageUsingPost(
     body: API.ScoringResultQueryRequest,
-    options?: { [key: string]: any }
+    options?: { [key: string]: never }
 ) {
     return request<API.BaseResponsePageScoringResultVO_>(
         "/api/app/scoringResult/list/page/vo",
@@ -103,7 +103,7 @@ export async function listScoringResultVoByPageUsingPost(
 /** listMyScoringResultVOByPage POST /api/app/scoringResult/my/list/page/vo */
 export async function listMyScoringResultVoByPageUsingPost(
     body: API.ScoringResultQueryRequest,
-    options?: { [key: string]: any }
+    options?: { [key: string]: never }
 ) {
     return request<API.BaseResponsePageScoringResultVO_>(
         "/api/app/scoringResult/my/list/page/vo",
@@ -121,7 +121,7 @@ export async function listMyScoringResultVoByPageUsingPost(
 /** updateScoringResult POST /api/app/scoringResult/update */
 export async function updateScoringResultUsingPost(
     body: API.ScoringResultUpdateRequest,
-    options?: { [key: string]: any }
+    options?: { [key: string]: never }
 ) {
     return request<API.BaseResponseBoolean_>("/api/app/scoringResult/update", {
         method: "POST",
