@@ -1,12 +1,10 @@
+import BASE_ROUTES from "./modules/base"
+
 export const routes = [
     {
         path: "/",
-        name: "home",
+        name: "Home",
         component: () => import("@/views/HomeView.vue")
     },
-    {
-        path: "/:pathMatch(.*)*",
-        name: "NotFound",
-        component: () => import("@/views/NotFound.vue")
-    }
+    ...BASE_ROUTES
 ]
