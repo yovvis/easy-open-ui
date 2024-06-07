@@ -13,25 +13,25 @@ export interface UserRequest {
 
     get<R>(
         url: string,
-        params?: any,
+        params?: never,
         headers?: Record<string, string>
     ): AsyncResult<R>
 
     post<R>(
         url: string,
-        data?: any,
+        data?: never,
         headers?: Record<string, string>
     ): AsyncResult<R>
 
     put<R>(
         url: string,
-        data?: any,
+        data?: never,
         headers?: Record<string, string>
     ): AsyncResult<R>
 
     delete<R>(
         url: string,
-        params?: any,
+        params?: never,
         headers?: Record<string, string>
     ): AsyncResult<R>
 }
