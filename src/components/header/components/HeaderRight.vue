@@ -10,13 +10,17 @@ const dropdownOptions = [
         label: "个人中心",
         key: "center",
         icon: User,
-        action: () => {}
+        action: () => {
+            console.log("个人中心")
+        }
     },
     {
         label: "退出登录",
         key: "logout",
         icon: User,
-        action: () => {}
+        action: () => {
+            console.log("退出登录")
+        }
     }
 ]
 </script>

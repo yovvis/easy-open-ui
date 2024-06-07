@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import Footer from "@/components/footer/index.vue"
+import Footer from "@/components/footer/FooterView.vue"
 import LoginBanner from "./components/LoginBanner.vue"
 </script>
 

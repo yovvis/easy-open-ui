@@ -32,7 +32,9 @@ export const useUserStore = defineStore("user", () => {
     /**
      * 退出登录
      */
-    async function logout() {}
+    async function logout() {
+        console.log("退出登录")
+    }
 
-    return { user, login: getUserInfo }
+    return { user, login: getUserInfo, logout }
 })
