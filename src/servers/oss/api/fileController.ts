@@ -16,7 +16,7 @@ export async function uploadFileUsingPost(
     }
 
     Object.keys(body).forEach((ele) => {
-        const item = (body as any)[ele]
+        const item = (body as never)[ele]
 
         if (item !== undefined && item !== null) {
             if (typeof item === "object" && !(item instanceof File)) {

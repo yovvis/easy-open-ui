@@ -3,7 +3,7 @@ import request from "@/utils/request"
 
 /** error GET /api/oss/error */
 export async function errorUsingGet(options?: null) {
-    return request<Record<string, any>>("/api/oss/error", {
+    return request<Record<string, never>>("/api/oss/error", {
         method: "GET",
         ...(options || {})
     })
@@ -11,7 +11,7 @@ export async function errorUsingGet(options?: null) {
 
 /** error PUT /api/oss/error */
 export async function errorUsingPut(options?: null) {
-    return request<Record<string, any>>("/api/oss/error", {
+    return request<Record<string, never>>("/api/oss/error", {
         method: "PUT",
         ...(options || {})
     })
@@ -19,7 +19,7 @@ export async function errorUsingPut(options?: null) {
 
 /** error POST /api/oss/error */
 export async function errorUsingPost(options?: null) {
-    return request<Record<string, any>>("/api/oss/error", {
+    return request<Record<string, never>>("/api/oss/error", {
         method: "POST",
         ...(options || {})
     })
@@ -27,7 +27,7 @@ export async function errorUsingPost(options?: null) {
 
 /** error DELETE /api/oss/error */
 export async function errorUsingDelete(options?: null) {
-    return request<Record<string, any>>("/api/oss/error", {
+    return request<Record<string, never>>("/api/oss/error", {
         method: "DELETE",
         ...(options || {})
     })
@@ -35,7 +35,7 @@ export async function errorUsingDelete(options?: null) {
 
 /** error PATCH /api/oss/error */
 export async function errorUsingPatch(options?: null) {
-    return request<Record<string, any>>("/api/oss/error", {
+    return request<Record<string, never>>("/api/oss/error", {
         method: "PATCH",
         ...(options || {})
     })

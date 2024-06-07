@@ -5,7 +5,7 @@ import request from "@/utils/request"
 export async function authGetUsingGet(
     // 叠加生成的Param类型 (非body参数swagger默认没有生成对象)
     params: API.authGetUsingGETParams,
-    options?: { [key: string]: any }
+    options?: { [key: string]: never }
 ) {
     return request<string>("/api/user/wx/portal/public", {
         method: "GET",
@@ -21,7 +21,7 @@ export async function postUsingPost(
     // 叠加生成的Param类型 (非body参数swagger默认没有生成对象)
     params: API.postUsingPOSTParams,
     body: string,
-    options?: { [key: string]: any }
+    options?: { [key: string]: never }
 ) {
     return request<string>("/api/user/wx/portal/public", {
         method: "POST",
@@ -40,7 +40,7 @@ export async function postUsingPost(
 export async function callBackUsingGet(
     // 叠加生成的Param类型 (非body参数swagger默认没有生成对象)
     params: API.callBackUsingGETParams,
-    options?: { [key: string]: any }
+    options?: { [key: string]: never }
 ) {
     return request<API.RedirectView>("/api/user/wx/portal/public/callBack", {
         method: "GET",

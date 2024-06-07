@@ -114,8 +114,8 @@ declare namespace API {
 
     type ModelAndView = {
         empty?: boolean
-        model?: Record<string, any>
-        modelMap?: Record<string, any>
+        model?: Record<string, never>
+        modelMap?: Record<string, never>
         reference?: boolean
         status?:
             | "CONTINUE"

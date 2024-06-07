@@ -159,8 +159,8 @@ declare namespace API {
 
     type ModelAndView = {
         empty?: boolean
-        model?: Record<string, any>
-        modelMap?: Record<string, any>
+        model?: Record<string, never>
+        modelMap?: Record<string, never>
         reference?: boolean
         status?:
             | "CONTINUE"
@@ -293,7 +293,7 @@ declare namespace API {
 
     type RedirectView = {
         applicationContext?: ApplicationContext
-        attributesMap?: Record<string, any>
+        attributesMap?: Record<string, never>
         beanName?: string
         contentType?: string
         exposePathVariables?: boolean
@@ -301,14 +301,14 @@ declare namespace API {
         propagateQueryProperties?: boolean
         redirectView?: boolean
         requestContextAttribute?: string
-        staticAttributes?: Record<string, any>
+        staticAttributes?: Record<string, never>
         url?: string
     }
 
     type SaTokenInfo = {
         isLogin?: boolean
         loginDevice?: string
-        loginId?: Record<string, any>
+        loginId?: Record<string, never>
         loginType?: string
         sessionTimeout?: number
         tag?: string

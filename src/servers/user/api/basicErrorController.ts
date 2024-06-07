@@ -2,7 +2,7 @@
 import request from "@/utils/request"
 
 /** errorHtml GET /api/user/error */
-export async function errorHtmlUsingGet(options?: { [key: string]: any }) {
+export async function errorHtmlUsingGet(options?: { [key: string]: never }) {
     return request<API.ModelAndView>("/api/user/error", {
         method: "GET",
         ...(options || {})
@@ -10,7 +10,7 @@ export async function errorHtmlUsingGet(options?: { [key: string]: any }) {
 }
 
 /** errorHtml PUT /api/user/error */
-export async function errorHtmlUsingPut(options?: { [key: string]: any }) {
+export async function errorHtmlUsingPut(options?: { [key: string]: never }) {
     return request<API.ModelAndView>("/api/user/error", {
         method: "PUT",
         ...(options || {})
@@ -18,7 +18,7 @@ export async function errorHtmlUsingPut(options?: { [key: string]: any }) {
 }
 
 /** errorHtml POST /api/user/error */
-export async function errorHtmlUsingPost(options?: { [key: string]: any }) {
+export async function errorHtmlUsingPost(options?: { [key: string]: never }) {
     return request<API.ModelAndView>("/api/user/error", {
         method: "POST",
         ...(options || {})
@@ -26,7 +26,7 @@ export async function errorHtmlUsingPost(options?: { [key: string]: any }) {
 }
 
 /** errorHtml DELETE /api/user/error */
-export async function errorHtmlUsingDelete(options?: { [key: string]: any }) {
+export async function errorHtmlUsingDelete(options?: { [key: string]: never }) {
     return request<API.ModelAndView>("/api/user/error", {
         method: "DELETE",
         ...(options || {})
@@ -34,7 +34,7 @@ export async function errorHtmlUsingDelete(options?: { [key: string]: any }) {
 }
 
 /** errorHtml PATCH /api/user/error */
-export async function errorHtmlUsingPatch(options?: { [key: string]: any }) {
+export async function errorHtmlUsingPatch(options?: { [key: string]: never }) {
     return request<API.ModelAndView>("/api/user/error", {
         method: "PATCH",
         ...(options || {})

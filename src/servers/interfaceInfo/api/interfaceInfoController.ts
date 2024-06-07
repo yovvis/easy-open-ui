@@ -4,7 +4,7 @@ import request from "@/utils/request"
 /** addInterfaceInfo POST /api/interfaceInfo/add */
 export async function addInterfaceInfoUsingPost(
     body: API.InterfaceInfoAddRequest,
-    options?: { [key: string]: any }
+    options?: { [key: string]: never }
 ) {
     return request<API.BaseResponseLong_>("/api/interfaceInfo/add", {
         method: "POST",
@@ -19,7 +19,7 @@ export async function addInterfaceInfoUsingPost(
 /** deleteInterfaceInfo POST /api/interfaceInfo/delete */
 export async function deleteInterfaceInfoUsingPost(
     body: API.DeleteRequest,
-    options?: { [key: string]: any }
+    options?: { [key: string]: never }
 ) {
     return request<API.BaseResponseBoolean_>("/api/interfaceInfo/delete", {
         method: "POST",
@@ -34,7 +34,7 @@ export async function deleteInterfaceInfoUsingPost(
 /** editInterfaceInfo POST /api/interfaceInfo/edit */
 export async function editInterfaceInfoUsingPost(
     body: API.InterfaceInfoEditRequest,
-    options?: { [key: string]: any }
+    options?: { [key: string]: never }
 ) {
     return request<API.BaseResponseBoolean_>("/api/interfaceInfo/edit", {
         method: "POST",
@@ -50,7 +50,7 @@ export async function editInterfaceInfoUsingPost(
 export async function getInterfaceInfoVoByIdUsingGet(
     // 叠加生成的Param类型 (非body参数swagger默认没有生成对象)
     params: API.getInterfaceInfoVOByIdUsingGETParams,
-    options?: { [key: string]: any }
+    options?: { [key: string]: never }
 ) {
     return request<API.BaseResponseInterfaceInfoVO_>(
         "/api/interfaceInfo/get/vo",
@@ -67,7 +67,7 @@ export async function getInterfaceInfoVoByIdUsingGet(
 /** listInterfaceInfoByPage POST /api/interfaceInfo/list/page */
 export async function listInterfaceInfoByPageUsingPost(
     body: API.InterfaceInfoQueryRequest,
-    options?: { [key: string]: any }
+    options?: { [key: string]: never }
 ) {
     return request<API.BaseResponsePageInterfaceInfo_>(
         "/api/interfaceInfo/list/page",
@@ -85,7 +85,7 @@ export async function listInterfaceInfoByPageUsingPost(
 /** listInterfaceInfoVOByPage POST /api/interfaceInfo/list/page/vo */
 export async function listInterfaceInfoVoByPageUsingPost(
     body: API.InterfaceInfoQueryRequest,
-    options?: { [key: string]: any }
+    options?: { [key: string]: never }
 ) {
     return request<API.BaseResponsePageInterfaceInfoVO_>(
         "/api/interfaceInfo/list/page/vo",
@@ -103,7 +103,7 @@ export async function listInterfaceInfoVoByPageUsingPost(
 /** listMyInterfaceInfoVOByPage POST /api/interfaceInfo/my/list/page/vo */
 export async function listMyInterfaceInfoVoByPageUsingPost(
     body: API.InterfaceInfoQueryRequest,
-    options?: { [key: string]: any }
+    options?: { [key: string]: never }
 ) {
     return request<API.BaseResponsePageInterfaceInfoVO_>(
         "/api/interfaceInfo/my/list/page/vo",
@@ -121,7 +121,7 @@ export async function listMyInterfaceInfoVoByPageUsingPost(
 /** updateInterfaceInfo POST /api/interfaceInfo/update */
 export async function updateInterfaceInfoUsingPost(
     body: API.InterfaceInfoUpdateRequest,
-    options?: { [key: string]: any }
+    options?: { [key: string]: never }
 ) {
     return request<API.BaseResponseBoolean_>("/api/interfaceInfo/update", {
         method: "POST",

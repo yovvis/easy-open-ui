@@ -5,7 +5,7 @@ import request from "@/utils/request"
 export async function getByIdUsingGet(
     // 叠加生成的Param类型 (非body参数swagger默认没有生成对象)
     params: API.getByIdUsingGETParams,
-    options?: { [key: string]: any }
+    options?: { [key: string]: never }
 ) {
     return request<API.User>("/api/user/inner/get/id", {
         method: "GET",
@@ -20,7 +20,7 @@ export async function getByIdUsingGet(
 export async function listByIdsUsingGet(
     // 叠加生成的Param类型 (非body参数swagger默认没有生成对象)
     params: API.listByIdsUsingGETParams,
-    options?: { [key: string]: any }
+    options?: { [key: string]: never }
 ) {
     return request<API.User[]>("/api/user/inner/get/ids", {
         method: "GET",
