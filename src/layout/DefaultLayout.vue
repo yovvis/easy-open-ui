@@ -6,6 +6,7 @@ import HeaderView from "@/components/header/HeaderView.vue"
 <template>
     <div>
         <HeaderView />
+        <router-view />
         <FooterView class="fixed bottom-0 left-0" />
     </div>
 </template>

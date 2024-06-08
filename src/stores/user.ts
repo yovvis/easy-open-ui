@@ -1,7 +1,9 @@
 import { ref } from "vue"
 import { defineStore } from "pinia"
 import type { GetUserInfoVO } from "@/apis/types/login"
-import { getLogin } from "@/apis/login"
+import { getLogin, logout as logoutHandler } from "@/apis/login"
+import type { UpdateUserInfoByMySelf } from "@/apis/types/user"
+import { updateUserInfoByMyself } from "@/apis/user"
 
 export const useUserStore = defineStore("user", () => {
     const user = ref<GetUserInfoVO>({
@@ -34,7 +36,16 @@ export const useUserStore = defineStore("user", () => {
      */
     async function logout() {
         console.log("退出登录")
+        return await logoutHandler()
     }
 
-    return { user, login: getUserInfo, logout }
+    /**
+     * 更新用户信息
+     * @param data
+     */
+    async function updateUserInfo(data: UpdateUserInfoByMySelf) {
+        return await updateUserInfoByMyself(data)
+    }
+
+    return { user, getUserInfo, logout, updateUserInfo }
 })

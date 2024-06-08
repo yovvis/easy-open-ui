@@ -15,3 +15,10 @@ export function login(data: LoginDTO) {
 export function getLogin(data: LoginDTO) {
     return userRequest.get<GetUserInfoVO>("/get/login", data)
 }
+
+/**
+ * 登出接口
+ */
+export function logout() {
+    return userRequest.post<void>("/logout")
+}

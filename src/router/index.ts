@@ -15,7 +15,7 @@ router.beforeEach(async (to, from, next) => {
     }
     const userStore = useUserStore()
     // 判断是否登录
-    const result = await userStore.login()
+    const result = await userStore.getUserInfo()
     if (result.data) {
         next()
         return

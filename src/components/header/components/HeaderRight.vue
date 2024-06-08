@@ -1,25 +1,41 @@
 <script lang="ts" setup>
 import { useUserStore } from "@/stores/user"
 import { Operation, User } from "@element-plus/icons-vue"
-import { ElDropdown, ElDropdownItem, ElDropdownMenu } from "element-plus"
+import {
+    ElDropdown,
+    ElDropdownItem,
+    ElDropdownMenu,
+    ElMessage
+} from "element-plus"
+import { useRouter } from "vue-router"
+import { LOGIN_ROUTE_NAME } from "@/router/config/white.config"
 
 const userStore = useUserStore()
+const $router = useRouter()
 
 const dropdownOptions = [
     {
         label: "个人中心",
         key: "center",
         icon: User,
-        action: () => {
-            console.log("个人中心")
+        action: async () => {
+            await $router.push({
+                name: "Center"
+            })
         }
     },
     {
         label: "退出登录",
         key: "logout",
         icon: User,
-        action: () => {
-            console.log("退出登录")
+        action: async () => {
+            const result = await userStore.logout()
+            if (result.code === 0) {
+                ElMessage.success("退出成功")
+                await $router.push({
+                    name: LOGIN_ROUTE_NAME
+                })
+            }
         }
     }
 ]
@@ -50,7 +66,7 @@ const dropdownOptions = [
                     </el-avatar>
                     <div class="h-full ml-[5px] flex flex-col justify-between">
                         <h3>{{ userStore.user.userName }}</h3>
-                        <h3>{{ userStore.user.userRole }}</h3>
+                        <h3 class="mt-[7px]">{{ userStore.user.userRole }}</h3>
                     </div>
                 </div>
             </template>
