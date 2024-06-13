@@ -6,6 +6,7 @@ import { login } from "@/apis/login"
 import type { LoginDTO } from "@/apis/types/login"
 import { useRouter } from "vue-router"
 import { ElMessage } from "element-plus"
+import GlobalConfig from "@/global.config"
 
 const $router = useRouter()
 
@@ -41,7 +42,7 @@ const handleSubmit = async () => {
 <template>
     <div class="w-80">
         <div class="text-gray-900 font-medium text-2xl leading-8">
-            登录 · 轻享开放平台
+            登录 · {{ GlobalConfig.title }}
         </div>
         <div class="text-[#8690a9] text-[14px] leading-6">
             请使用您的账号登录

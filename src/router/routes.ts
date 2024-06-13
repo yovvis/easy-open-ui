@@ -1,4 +1,5 @@
-import BASE_ROUTES from "./modules/base"
+import BASE_ROUTES from "./base"
+import USER_ROUTES from "./modules/user"
 
 export const routes = [
     {
@@ -10,7 +11,8 @@ export const routes = [
                 path: "center",
                 name: "Center",
                 component: () => import("@/views/center/CenterView.vue")
-            }
+            },
+            ...USER_ROUTES
         ]
     },
     ...BASE_ROUTES

@@ -1,4 +1,3 @@
-// 404页面路由
 export default [
     {
         path: "/:pathMatch(.*)*",
